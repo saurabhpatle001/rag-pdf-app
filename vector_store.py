@@ -1,7 +1,7 @@
 # vector_store.py
 
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchai_community.vectorstores import FAISS
 from langchain.docstore.document import Document
 from langchain_community.embeddings import HuggingFaceHubEmbeddings
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
