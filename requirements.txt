@@ -1,0 +1,7 @@
+streamlit==1.14.0
+langchain==0.0.137
+langchain-groq==0.1.1  # Groq support
+python-dotenv==0.20.0
+PyPDF2==1.26.0
+FAISS==1.7.1  # or ChromaDB depending on what you are using
+sentence-transformers
