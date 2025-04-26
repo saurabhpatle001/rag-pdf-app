@@ -10,7 +10,7 @@ import getpass
 import os
 
 if "GOOGLE_API_KEY" not in os.environ:
-    os.environ["GOOGLE_API_KEY"] = getpass.getpass("Provide your Google API key here")
+    os.environ["GOOGLE_API_KEY"] = "AIzaSyBEGyRocXD3g_uapD51iDKKZRR4KT8JJBs"
 
 def create_vector_store_from_text(text):
     # 1. Split text into manageable chunks
