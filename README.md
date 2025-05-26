@@ -1,12 +1,6 @@
-🤖 AI-Based PDF Chatbot with Summarization and Contextual Q&A 📄🤖
-
-
+AI-Powered PDF Chatbot with Summarization and Contextual Q&A 📄🤖
 Overview 🌟
-This project is an AI-powered PDF chatbot that enables users to upload PDF documents and interact with them using natural language.
-Powered by Retrieval-Augmented Generation (RAG), the system extracts text, generates summaries (bullet-point, short, and detailed), and answers user queries based on the document’s content.
-It’s designed for use cases like academic research, legal document analysis, and customer support.
-
-
+This project is an AI-powered PDF chatbot that allows users to upload PDF documents and interact with them using natural language. Powered by Retrieval-Augmented Generation (RAG), it extracts text, generates summaries (bullet-point, short, and detailed), and answers queries based on the document’s content. Additionally, a separate general-knowledge chatbot answers queries beyond the PDF, such as recent events (e.g., activities in India and Pakistan). Designed for academic research, legal document analysis, customer support, and general knowledge exploration.
 Key Features 🔑
 
 📤 PDF Upload: Supports uploading any PDF (e.g., textbooks, manuals, reports).
@@ -16,6 +10,8 @@ Key Features 🔑
 🔍 Vector Search: Stores embeddings in FAISS for fast and accurate similarity search.
 📝 Summarization: Generates bullet-point, short, and detailed summaries using LLMs (e.g., BART, T5).
 ❓ Q&A Chatbot: Answers user queries with contextual responses using top-k retrieval.
+🌍 General Knowledge Chatbot: A separate chatbot answers out-of-context questions, such as recent global events (e.g., activities in India and Pakistan).
+📱 User-Friendly Interface: Built with Streamlit for an intuitive web-based frontend.
 
 Tech Stack 🛠️
 
@@ -36,6 +32,9 @@ flowchart TD
     F[User asks question] --> G[Query FAISS for similar chunks]
     G --> H[Answer Generation with LLM (DistilBERT/BART)]
     H --> I[Return Answer to User]
+    J[User asks general question] --> K[General Knowledge Chatbot]
+    K --> L[Generate Response with LLM]
+    L --> I
 
 Installation ⚙️
 Prerequisites ✅
@@ -63,7 +62,7 @@ Install FAISS:
 pip install faiss-cpu  # Use faiss-gpu for GPU support
 
 
-Frontend Setup (Streamlit):To run the Streamlit frontend:
+Run the Streamlit frontend:
 streamlit run app.py
 
 
@@ -80,7 +79,7 @@ streamlit
 
 Usage 📖
 
-Run the backend:If using Flask/FastAPI separately:
+Run the backend (if using Flask/FastAPI separately):
 python backend.py
 
 The API will be available at http://localhost:5000 (Flask) or http://localhost:8000 (FastAPI).
@@ -90,20 +89,24 @@ streamlit run app.py
 
 The frontend will be available at http://localhost:8501.
 
-Upload a PDF:Use the Streamlit interface to upload a PDF or the API endpoint /upload.
+Upload a PDF:
+
+Use the Streamlit interface to upload a PDF or the API endpoint /upload.
+
 
 Interact with the chatbot:
 
 📝 Summarize: Use the Streamlit interface or API endpoint /summarize?type=bullet|short|detailed.
 ❓ Query: Use the Streamlit interface or API endpoint /query?question=your_question_here.
+🌍 General Knowledge: Ask questions unrelated to the PDF (e.g., "What’s happening in India and Pakistan?") via the Streamlit interface.
+
 
 
 Example (API):
 curl -X POST -F "file=@sample.pdf" http://localhost:5000/upload
 curl http://localhost:5000/summarize?type=bullet
 curl http://localhost:5000/query?question="What is the main topic of the document?"
-
-
+curl http://localhost:5000/query?question="What’s happening in India and Pakistan?"
 
 Performance 📈
 
@@ -111,12 +114,24 @@ Performance 📈
 ✍️ Summarization: High coherence using BART or T5 models.
 ⚡ Processing Time: <3 seconds for documents under 50 pages.
 📊 Scalability: FAISS ensures efficient retrieval for large documents.
+🌍 General Knowledge: Provides detailed, context-aware answers for non-PDF queries.
 
+Screenshots 📸
+Below are screenshots showcasing the project’s Streamlit interface:
+
+PDF Upload Page: Simple interface for uploading PDFs.
+Summary View: Displays bullet-point, short, and detailed summaries.
+Q&A Interface: Interactive chat for PDF-based queries.
+General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
+Response Example: Sample output for a query about a PDF or general topic.
+
+Note: Screenshots are available in the screenshots/ folder of the repository.
 Use Cases 💼
 
 🎓 Students/Researchers: Query textbooks or research papers.
 ⚖️ Legal Professionals: Summarize and analyze contracts.
 📞 Customer Support: Build internal Q&A systems for manuals or policies.
+🌍 General Knowledge: Explore global events or topics beyond PDFs.
 
 Future Enhancements 🚧
 
