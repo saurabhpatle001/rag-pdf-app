@@ -2,7 +2,11 @@
 
 
 Overview 🌟
-This project is an AI-powered PDF chatbot that enables users to upload PDF documents and interact with them using natural language. Powered by Retrieval-Augmented Generation (RAG), the system extracts text, generates summaries (bullet-point, short, and detailed), and answers user queries based on the document’s content. It’s designed for use cases like academic research, legal document analysis, and customer support.
+This project is an AI-powered PDF chatbot that enables users to upload PDF documents and interact with them using natural language.
+Powered by Retrieval-Augmented Generation (RAG), the system extracts text, generates summaries (bullet-point, short, and detailed), and answers user queries based on the document’s content.
+It’s designed for use cases like academic research, legal document analysis, and customer support.
+
+
 Key Features 🔑
 
 📤 PDF Upload: Supports uploading any PDF (e.g., textbooks, manuals, reports).
