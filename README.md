@@ -117,18 +117,24 @@ Performance 🌟
 🌍 General Knowledge: Provides detailed, context-aware answers for non-JSON queries.
 
 Screenshots 📸
-Below are screenshots showcasing the project’s Streamlit interface:
+1.Below are screenshots showcasing the project’s Streamlit interface:
 
-General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/pdf_upload.png
 
-Json Upload Page: Simple interface for uploading JSONs.
+2.General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/general_knowledge_chatbot.png
 
-Q&A Interface: Interactive chat for JSON-based queries.
+3.Json Upload Page: Simple interface for uploading JSONs.
 
-Response Example: Sample output for a query about a JSON or general topic.
+4.Q&A Interface: Interactive chat for JSON-based queries.
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/qna_interface.png
+
+5.Response Example: Sample output for a query about a JSON or general topic.
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/response_example.png
 
 Summary View: Displays bullet-point, short, and detailed summaries.
 
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/summary_view.png
 
 Use Cases 💼
 
