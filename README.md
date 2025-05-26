@@ -117,18 +117,24 @@ Performance 📈
 🌍 General Knowledge: Provides detailed, context-aware answers for non-PDF queries.
 
 Screenshots 📸
-Below are screenshots showcasing the project’s Streamlit interface:
+Below are screenshots showcasing the project’s Streamlit interface:-
+
+General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
 
 PDF Upload Page: Simple interface for uploading PDFs.
-![PDF Upload Interface](https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/pdf_upload.png)
-
-Summary View: Displays bullet-point, short, and detailed summaries.
 
 Q&A Interface: Interactive chat for PDF-based queries.
-General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
+
 Response Example: Sample output for a query about a PDF or general topic.
 
-Note: Screenshots are available in the screenshots/ folder of the repository.
+Summary View: Displays bullet-point, short, and detailed summaries.
+--------------------------------------------------------------------------
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/pdf_upload.png
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/summary_view.png
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/qna_interface.png
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/general_knowledge_chatbot.png
+https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/response_example.png
+
 Use Cases 💼
 
 🎓 Students/Researchers: Query textbooks or research papers.
