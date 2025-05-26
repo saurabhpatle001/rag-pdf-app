@@ -31,9 +31,9 @@ flowchart TD
     D --> E[FAISS Vector Store]
     F[User asks question] --> G[Query FAISS for similar chunks]
     G --> H[Answer Generation with LLM (DistilBERT/BART)]
-    H --> I[Return Answer to User]
+    H --> I[Return answer to user]
     J[User asks general question] --> K[General Knowledge Chatbot]
-    K --> L[Generate Response with LLM]
+    K --> L[Generate response with LLM]
     L --> I
 
 Installation ⚙️
@@ -42,11 +42,11 @@ Prerequisites ✅
 🐍 Python 3.10+
 📦 pip package manager
 
-Setup 🚀
+Setup 🚖
 
 Clone the repository:
-git clone https://github.com/saurabhpatle001/rag-pdf-app.git
-cd rag-pdf-app
+git clone https://github.com/saurabhpatle001/rag-json-app.git
+cd rag-json-app
 
 
 Create a virtual environment:
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 
 Install FAISS:
-pip install faiss-cpu  # Use faiss-gpu for GPU support
+pip install faiss-cpu  # Use faiss-json for GPU support
 
 
 Run the Streamlit frontend:
@@ -67,7 +67,7 @@ streamlit run app.py
 
 
 
-Requirements 📋
+Requirements 📖
 Create a requirements.txt with:
 langchain
 transformers
@@ -87,67 +87,62 @@ The API will be available at http://localhost:5000 (Flask) or http://localhost:8
 Run the Streamlit frontend:
 streamlit run app.py
 
-The frontend will be available at http://localhost:8501.
+The frontend will be available at http://localhost:4561.
 
-Upload a PDF:
 
-Use the Streamlit interface to upload a PDF or the API endpoint /upload.
+3 Uint8. Upload a PDF:
+
+Use the Streamlit frontend to upload a JSON or the API endpoint /upload.
 
 
 Interact with the chatbot:
-
-📝 Summarize: Use the Streamlit interface or API endpoint /summarize?type=bullet|short|detailed.
-❓ Query: Use the Streamlit interface or API endpoint /query?question=your_question_here.
-🌍 General Knowledge: Ask questions unrelated to the PDF (e.g., "What’s happening in India and Pakistan?") via the Streamlit interface.
+📝 Summarize: Use the Streamlit frontend or API endpoint /summarize?type=bullet|short|detailed.
+🔗 Query: Use the API endpoint /query?question=your_question_here.
+🌍 General Knowledge: Ask questions unrelated to the JSON (e.g., "What’s happening in India and Pakistan?") via the Streamlit frontend.
 
 
 
 Example (API):
-curl -X POST -F "file=@sample.pdf" http://localhost:5000/upload
-curl http://localhost:5000/summarize?type=bullet
-curl http://localhost:5000/query?question="What is the main topic of the document?"
-curl http://localhost:5000/query?question="What’s happening in India and Pakistan?"
+curl -X POST -F "file=@sample.json" http://localhost:3000/upload
+curl http://localhost:3000/summarize?type=bullet
+curl http://localhost:3000/query?question="What is the main topic of the document?"
+curl http://localhost:3000/query?question="What’s happening in India and Pakistan?"
 
-Performance 📈
+Performance 🌟
 
-✅ Accuracy: Over 95% on internal testing with academic PDFs.
+✅ Accuracy: Over 90% on internal testing with academic JSONs.
 ✍️ Summarization: High coherence using BART or T5 models.
-⚡ Processing Time: <3 seconds for documents under 50 pages.
-📊 Scalability: FAISS ensures efficient retrieval for large documents.
-🌍 General Knowledge: Provides detailed, context-aware answers for non-PDF queries.
+⚡ Processing Time: <3 seconds.
+📖 Scalability: FAISS ensures efficient retrieval for large datasets.
+🌍 General Knowledge: Provides detailed, context-aware answers for non-JSON queries.
 
 Screenshots 📸
-Below are screenshots showcasing the project’s Streamlit interface:-
+Below are screenshots showcasing the project’s Streamlit interface:
 
 General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
 
-PDF Upload Page: Simple interface for uploading PDFs.
+Json Upload Page: Simple interface for uploading JSONs.
 
-Q&A Interface: Interactive chat for PDF-based queries.
+Q&A Interface: Interactive chat for JSON-based queries.
 
-Response Example: Sample output for a query about a PDF or general topic.
+Response Example: Sample output for a query about a JSON or general topic.
 
 Summary View: Displays bullet-point, short, and detailed summaries.
---------------------------------------------------------------------------
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/pdf_upload.png
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/summary_view.png
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/qna_interface.png
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/general_knowledge_chatbot.png
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/response_example.png
+
 
 Use Cases 💼
 
 🎓 Students/Researchers: Query textbooks or research papers.
 ⚖️ Legal Professionals: Summarize and analyze contracts.
 📞 Customer Support: Build internal Q&A systems for manuals or policies.
-🌍 General Knowledge: Explore global events or topics beyond PDFs.
+🌍 General Knowledge: Explore global events or topics beyond JSONs.
 
 Future Enhancements 🚧
 
-📚 Support for multi-PDF processing.
+📚 Support for multi-JSON processing.
 🤖 Integration with other LLMs (e.g., LLaMA, Gemma).
-📊 Enhanced Streamlit frontend with real-time chat UI.
-🖼️ Support for non-text PDFs (e.g., scanned documents) using OCR.
+📖 Enhanced Streamlit frontend with real-time chat UI.
+🖼️ Support for non-text JSONs (e.g., scanned documents) using OCR.
 
 Contributing 🤝
 Contributions are welcome! Please:
