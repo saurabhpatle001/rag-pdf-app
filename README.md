@@ -120,7 +120,10 @@ Screenshots 📸
 Below are screenshots showcasing the project’s Streamlit interface:
 
 PDF Upload Page: Simple interface for uploading PDFs.
+![PDF Upload Interface](https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/pdf_upload.png)
+
 Summary View: Displays bullet-point, short, and detailed summaries.
+
 Q&A Interface: Interactive chat for PDF-based queries.
 General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
 Response Example: Sample output for a query about a PDF or general topic.
