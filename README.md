@@ -116,25 +116,20 @@ Performance 🌟
 📖 Scalability: FAISS ensures efficient retrieval for large datasets.
 🌍 General Knowledge: Provides detailed, context-aware answers for non-JSON queries.
 
-Screenshots 📸
-1.Below are screenshots showcasing the project’s Streamlit interface:
+1. **General Knowledge Chatbot**: Interface for non-PDF questions (e.g., India-Pakistan events).  
+   ![General Knowledge Chatbot](screenshots/general_knowledge_chatbot.png)
 
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/pdf_upload.png
+2. **PDF Upload Page**: Simple interface for uploading PDFs.  
+   ![PDF Upload Interface](screenshots/pdf_upload.png)
 
-2.General Knowledge Chatbot: Interface for non-PDF questions (e.g., India-Pakistan events).
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/general_knowledge_chatbot.png
+3. **Q&A Interface**: Interactive chat for PDF-based queries.  
+   ![Q&A Interface](screenshots/qna_interface.png)
 
-3.Json Upload Page: Simple interface for uploading JSONs.
+4. **Response Example**: Sample output for a query about a PDF or general topic.  
+   ![Response Example](screenshots/response_example.png)
 
-4.Q&A Interface: Interactive chat for JSON-based queries.
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/qna_interface.png
-
-5.Response Example: Sample output for a query about a JSON or general topic.
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/response_example.png
-
-Summary View: Displays bullet-point, short, and detailed summaries.
-
-https://raw.githubusercontent.com/saurabhpatle001/rag-pdf-app/main/screenshots/summary_view.png
+5. **Summary View**: Displays bullet-point, short, and detailed summaries.  
+   ![Summary View](screenshots/summary_view.png)
 
 Use Cases 💼
 
