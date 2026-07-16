@@ -10,7 +10,7 @@ import os
 def get_qa_chain(vectorstore):
     llm = ChatGroq(
         groq_api_key=os.getenv("GROQ_API_KEY"),
-        model_name="gemma2-9b-it"  # working supported model
+        model_name="llama-3.3-70b-versatile"
     )
 
     qa_chain = RetrievalQA.from_chain_type(
